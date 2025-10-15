@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aesthetic Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bloom Thoughts 🌸</h1>
+    <nav>
+      <ul>
+        <li><a href="#post1">Mindful Living</a></li>
+        <li><a href="#post2">Travel Diary</a></li>
+        <li><a href="#post3">Creative Corner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Blog Post 1 -->
+    <section class="post" id="post1">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Mindful Living">
+      <div class="post-content">
+        <h2>Mindful Living</h2>
+        <p class="date">Published on: October 12, 2025</p>
+        <p>Learn how to live each moment mindfully and bring peace to your everyday life. Slow down, breathe deeply, and embrace the present with gratitude.</p>
+      </div>
+      <div class="comment-section">
+        <h3>Leave a Comment</h3>
+        <input type="text" id="name1" placeholder="Your name">
+        <textarea id="comment1" placeholder="Write a comment..."></textarea>
+        <button onclick="addComment(1)">Post Comment</button>
+        <ul id="commentList1"></ul>
+      </div>
+    </section>
+
+    <!-- Blog Post 2 -->
+    <section class="post" id="post2">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="Travel Diary">
+      <div class="post-content">
+        <h2>Travel Diary: The Mountains</h2>
+        <p class="date">Published on: October 10, 2025</p>
+        <p>Mountains teach us patience and perspective. Every step uphill is worth the breathtaking view from the top. Explore nature, explore yourself.</p>
+      </div>
+      <div class="comment-section">
+        <h3>Leave a Comment</h3>
+        <input type="text" id="name2" placeholder="Your name">
+        <textarea id="comment2" placeholder="Write a comment..."></textarea>
+        <button onclick="addComment(2)">Post Comment</button>
+        <ul id="commentList2"></ul>
+      </div>
+    </section>
+
+    <!-- Blog Post 3 -->
+    <section class="post" id="post3">
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657" alt="Creative Corner">
+      <div class="post-content">
+        <h2>Creative Corner</h2>
+        <p class="date">Published on: October 5, 2025</p>
+        <p>Unleash your creativity through art, writing, and music. Expressing yourself is not about perfection—it’s about passion and authenticity.</p>
+      </div>
+      <div class="comment-section">
+        <h3>Leave a Comment</h3>
+        <input type="text" id="name3" placeholder="Your name">
+        <textarea id="comment3" placeholder="Write a comment..."></textarea>
+        <button onclick="addComment(3)">Post Comment</button>
+        <ul id="commentList3"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bloom Thoughts | Designed by Sumit ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

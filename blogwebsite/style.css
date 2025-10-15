@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fdfaf6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #fff5f8;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #e07a9e;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e07a9e;
+}
+
+/* Blog Posts */
+.post {
+  background: white;
+  width: 85%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.5rem;
+}
+
+.post-content h2 {
+  color: #d95b8c;
+}
+
+.date {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Comment Section */
+.comment-section {
+  background: #fff0f5;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #ffd6e3;
+}
+
+.comment-section h3 {
+  color: #c74375;
+}
+
+.comment-section input,
+.comment-section textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border: 1px solid #ffd6e3;
+  border-radius: 8px;
+  outline: none;
+}
+
+.comment-section button {
+  background: #e07a9e;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.comment-section button:hover {
+  background: #c74375;
+}
+
+.comment-section ul {
+  margin-top: 1rem;
+}
+
+.comment-section li {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ffd6e3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff5f8;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post img {
+    height: 200px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
